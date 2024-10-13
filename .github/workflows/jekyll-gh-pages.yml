@@ -49,12 +49,10 @@ jobs:
 
       - name: Install Jekyll dependencies
         run: |
-          cd smahmoodi
           bundle install
 
       - name: Build with Jekyll
         run: |
-          cd smahmoodi
           bundle exec jekyll build
 
       # Move React build to Jekyll _site
