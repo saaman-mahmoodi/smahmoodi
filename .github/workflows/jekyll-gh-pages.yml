@@ -40,11 +40,11 @@ jobs:
           cd smahmoodi
           npm run build
 
-      # Setup Ruby and Install Jekyll dependencies
+      # Build Jekyll site
       - name: Setup Ruby and Jekyll
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7'   # Use Ruby 2.7.x to avoid conflicts with github-pages gem
+          ruby-version: '2.7'
           bundler-cache: true
 
       - name: Install Jekyll dependencies
@@ -56,6 +56,11 @@ jobs:
         run: |
           cd smahmoodi  # Ensure you're in the correct folder
           bundle exec jekyll build
+
+      # Ensure _site/ directory exists
+      - name: Ensure _site directory exists
+        run: |
+          mkdir -p _site
 
       # Move React build to Jekyll _site
       - name: Move React Build to Jekyll _site
