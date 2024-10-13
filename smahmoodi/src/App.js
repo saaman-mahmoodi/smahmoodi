@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Saaman Mahmoodi</h1>
-        <p>Frontend Developer | Software Engineer | React Enthusiast</p>
+        <p>Frontend Developer | Software Engineer</p>
         <div className="social-links">
           <a href="https://linkedin.com/in/saaman-mahmoodi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="https://github.com/saaman-mahmoodi" target="_blank" rel="noopener noreferrer">GitHub</a>
