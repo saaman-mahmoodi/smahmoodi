@@ -32,12 +32,12 @@ jobs:
 
       - name: Install React dependencies
         run: |
-          cd react-app
+          cd smahmoodi
           npm install
 
       - name: Build React
         run: |
-          cd react-app
+          cd smahmoodi
           npm run build
 
       # Build Jekyll site
@@ -58,7 +58,7 @@ jobs:
       # Move React build to Jekyll _site
       - name: Move React Build to Jekyll _site
         run: |
-          mv react-app/build/* _site/
+          mv smahmoodi/build/* _site/
 
       # Upload the final built site
       - name: Upload artifact
